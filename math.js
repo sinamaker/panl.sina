@@ -54,3 +54,10 @@ $(document).ready(function () {
     });
 });
 
+function validatePayment() {
+    var agreement = document.getElementById("agreement");
+    if (!agreement.checked) {
+        alert("لطفاً قوانین و مقررات را تأیید کنید.");
+        return false;
+    }
+}

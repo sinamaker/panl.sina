@@ -53,9 +53,14 @@
                     style="font-size: 20px; text-align: center; display: block; margin-top: 20px;">____________________________</a>
             </div>
         </form>
+        <form action="payment.php" onsubmit="return validatePayment">
+            <center><label for="agreement">
+                <input type="checkbox" id="agreement"> <a href="قوانین.html">قوانین و مقرارات را میپذیرم</a>
+        </label></center>
         <div class="price" id="price"></div>
-        <center> <button type="button" class="btn btn-success" id="final_pay">پرداخت</button></center>
+        <center> <button type="button"  class="btn btn-success" id="final_pay">پرداخت</button></center>
     </div>
+    </form>
 
     <!-- Custom JS -->
     <script src="math.js"></script>
