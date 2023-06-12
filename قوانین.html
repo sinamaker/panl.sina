@@ -32,6 +32,8 @@
             <li dir="rtl">سرویس های ما به صورت تضمینی ارائه میشود و حتی در زمانی که سرعت کاهش پیدا کند یا شرایط دیگر در کمتر از 12 ساعت مشکلات برطرف میشود و برای هر ساعت قطعی به تایم پایان سرویس های شما اضافه میشود.</li>
             </div>
         </form>
+        <button type="button" class="btn btn-success" onclick="goBack()">بازگشت</button>
+        </body>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -67,7 +69,9 @@
 .container.show {
     top: 0;
 }
-
+    .btn-success{
+        margin-left: 200px;
+    }
         </style>
 <!--جاوا هستش لطفا دست نزنید-->
         <script>
@@ -75,5 +79,8 @@
     var container = document.getElementById("container");
     container.classList.add("show");
 });
+function goBack() {
+        window.location.href = "idex.html";
+    }
         </script>
     

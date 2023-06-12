@@ -53,15 +53,3 @@ $(document).ready(function () {
         });
     });
 });
-
-function validatePayment() {
-    var agreement = document.getElementById("agreement");
-    if (!agreement.checked) {
-        alert("لطفاً قوانین و مقررات را تأیید کنید.");
-        return false;
-    }
-}
-document.addEventListener("DOMContentLoaded", function() {
-    var agreementCheckbox = document.getElementById("agreement");
-    var finalPayButton = document.getElementById("final_pay");
-    });
