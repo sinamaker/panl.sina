@@ -61,3 +61,7 @@ function validatePayment() {
         return false;
     }
 }
+document.addEventListener("DOMContentLoaded", function() {
+    var agreementCheckbox = document.getElementById("agreement");
+    var finalPayButton = document.getElementById("final_pay");
+    });

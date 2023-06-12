@@ -14,16 +14,12 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="Logo FastGuard (1).ico" type="image/x-icon">
-    <script>
-        // نمایش هشدار هنگام بارگذاری صفحه
-        window.onload = function () {
-            alert(" حتما برای استفاده از خدمات ما قوانین و مقررات  را خوانده  و همچنین در کانال تلگرامی ما عضو شوید");
-        };
-    </script>
+    
 </head>
 
 <body>
-    <div class="container">
+
+    <div class="container" id="container">
         <center>
             <h1>FastGuard</h1>
         </center>
@@ -62,5 +58,22 @@
             .pad{
                 padding-right: 50px;
             }
+            .container {
+    position: relative;
+    top: -100vh;
+    transition: top 1s ease-out;
+}
+
+.container.show {
+    top: 0;
+}
+
         </style>
+<!--جاوا هستش لطفا دست نزنید-->
+        <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    var container = document.getElementById("container");
+    container.classList.add("show");
+});
+        </script>
     

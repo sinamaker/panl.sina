@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <center>
             <h1>FastGuard</h1>
         </center>
@@ -60,10 +60,16 @@
         <div class="price" id="price"></div>
         <center> <button type="button"  class="btn btn-success" id="final_pay">پرداخت</button></center>
     </div>
-    </form>
 
     <!-- Custom JS -->
     <script src="math.js"></script>
 </body>
 
-</html>
+</html> 
+<!--جاوا هستش لطفا دست نزنید-->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var container = document.getElementById("container");
+    container.classList.add("show");
+});
+</script>
