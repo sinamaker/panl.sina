@@ -122,3 +122,54 @@ body *:not(i) {
 body [lang="fa"] {
   font-family: 'Shabnam', sans-serif;
 }
+@media (max-width: 768px) {
+  h1 {
+      font-size: 20px;
+  }
+  p {
+      font-size: 14px;
+  }
+}
+.circle {
+  width: 200px;
+  height: 170px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #04c4ff;
+  box-shadow: 0 0 100px rgba(6, 91, 250, 0.3);
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.circle:hover {
+  transform: scale(1);
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.circle:hover img {
+  transform: scale(1.1);
+}
+
