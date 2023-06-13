@@ -1,142 +1,151 @@
 body {
-    font-family: roboto, sans-serif;
-    background-color: #f2f2f2;
- font-family: 'IRANSans', sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  font-family: 'IRANSans', sans-serif;
 }
 
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 5px 50px 50px rgba(12, 12, 12, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 50px 50px rgba(12, 12, 12, 0.1);
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 label {
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .btn {
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    color: #ffffff;
-    background-color: #007bff;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #0066cc;
+  background-color: #0066cc;
 }
 
 .price {
-    margin-top: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .btn-success {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    color: #ffffff;
-    background-color: #28a745;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  background-color: #28a745;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btn-success:hover {
-    background-color: #218838;
+  background-color: #218838;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
 }
+
 select {
-    direction: rtl;
-  }
-.color{
-    display: inline-block;
-    background-color: #3b0fb3;
-    border: 2px solid #3213bd;
-    padding: 10px;
-    margin: 10px;
-    text-decoration: none;
-    color: #333333;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .color{
-    background-color: #d9d9d9;
-  }
-  body {
-    background: linear-gradient(45deg, #2e5a94, #0bda38, #c106fa, #db0404);
-    background-size: 400% 400%;
-    animation: gradientBackground 15s ease infinite;
+  direction: rtl;
+}
+
+.color {
+  display: inline-block;
+  background-color: #3b0fb3;
+  border: 2px solid #3213bd;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  color: #333333;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.color {
+  background-color: #d9d9d9;
+}
+
+body {
+  background: linear-gradient(45deg, #2e5a94, #0bda38, #c106fa, #db0404);
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
   }
 
-  @keyframes gradientBackground {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  body {
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .shake {
-    transform: translateX(10px);
-  }
- 
-  .btn-success {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff4d4d;
-    color: #fff;
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  50% {
+    background-position: 100% 50%;
   }
 
-  .btn-success {
-    transform: scale(1.1);
-    background-color: #3a08ee;
-    color: #fff;
+  100% {
+    background-position: 0% 50%;
   }
-  @import url('https://fonts.googleapis.com/css2?family=Shabnam&display=swap');
-    
-  body {
-    font-family: 'Shabnam', Arial, sans-serif;
-<<<<<<< Updated upstream
-  }
-  .container {
-    position: relative;
-    top: -100vh;
-    transition: top 1s ease-out;
+}
+
+body {
+  transition: transform 0.3s ease-in-out;
+}
+
+.shake {
+  transform: translateX(10px);
+}
+
+.btn-success {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  color: #fff;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-success {
+  transform: scale(1.1);
+  background-color: #3a08ee;
+  color: #fff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Shabnam&display=swap');
+
+body {
+  font-family: 'Shabnam', Arial, sans-serif;
+  <<<<<<< Updated upstream
+}
+
+.container {
+  position: relative;
+  top: -100vh;
+  transition: top 1s ease-out;
 }
 
 .container.show {
-    top: 0;
+  top: 0;
 }
