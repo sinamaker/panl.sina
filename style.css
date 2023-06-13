@@ -1,7 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
   font-family: 'Arial', sans-serif;
+  background: linear-gradient(45deg, #2e5a94, #0bda38, #c106fa, #db0404);
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: transform 0.3s ease-in-out;
 }
 
 .container {
@@ -11,6 +17,13 @@ body {
   padding: 20px;
   border-radius: 20px;
   box-shadow: 5px 50px 50px rgba(12, 12, 12, 0.1);
+  position: relative;
+  top: -100vh;
+  transition: top 1s ease-out;
+}
+
+.container.show {
+  top: 0;
 }
 
 h1 {
@@ -41,13 +54,6 @@ label {
   background-color: #0066cc;
 }
 
-.price {
-  margin-top: 20px;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-}
-
 .btn-success {
   margin-top: 20px;
   padding: 10px 20px;
@@ -56,23 +62,12 @@ label {
   color: #ffffff;
   background-color: #28a745;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
 .btn-success:hover {
   background-color: #218838;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-
-}
-
-select {
-  direction: rtl;
+  transform: scale(1.1);
 }
 
 .color {
@@ -87,65 +82,43 @@ select {
   transition: background-color 0.3s ease;
 }
 
-.color {
+.color:hover {
   background-color: #d9d9d9;
 }
 
-body {
-  background: linear-gradient(45deg, #2e5a94, #0bda38, #c106fa, #db0404);
-  background-size: 400% 400%;
-  animation: gradientBackground 15s ease infinite;
+select {
+  direction: rtl;
 }
 
-@keyframes gradientBackground {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-body {
-  transition: transform 0.3s ease-in-out;
+.price {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .shake {
   transform: translateX(10px);
 }
 
-.btn-success {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #ff4d4d;
-  color: #fff;
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.btn-success {
-  transform: scale(1.1);
-  background-color: #3a08ee;
-  color: #fff;
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Shabnam&display=swap');
 
-body {
-  font-family: 'Arial', Arial, sans-serif;
-  <<<<<<< Updated upstream
+body *:not(i) {
+  font-family: 'Arial', sans-serif;
 }
 
-.container {
-  position: relative;
-  top: -100vh;
-  transition: top 1s ease-out;
-}
-
-.container.show {
-  top: 0;
+body [lang="fa"] {
+  font-family: 'Shabnam', sans-serif;
 }
