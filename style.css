@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
-  font-family: 'IRANSans', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
 .container {
@@ -136,7 +136,7 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Shabnam&display=swap');
 
 body {
-  font-family: 'Shabnam', Arial, sans-serif;
+  font-family: 'Arial', Arial, sans-serif;
   <<<<<<< Updated upstream
 }
 
