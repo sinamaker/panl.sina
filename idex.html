@@ -66,6 +66,9 @@
                 </center>
             </div>
 
+            <div class="price" id="price"></div>
+            <center> <button   type="submit" class="btn btn-success" id="final_pay" disabled onclick="doPayment()" >پرداخت</button></center>
+
             <head>
                 <title>FastGuard</title>
                 <meta charset="UTF-8">
@@ -75,17 +78,11 @@
             </head>
 
             <body>
-                <div class="container" id="container"> <!-- YOUR FORM -->
-                    <form method="post" name="payment-form">
-                        <div class="form-group"> <select class="form-control" id="plan" name="plan">
-                                <!-- plan options --> </select>
                         </div> <!-- CHECKBOX --> <input type="checkbox" id="terms" required> <label
                             for="terms">...</label>
                         <script> $('#terms').on('change', function () { if (this.checked) { $('#final_pay').prop('disabled', false); } else { $('#final_pay').prop('disabled', true); } }); </script>
                         <!-- PAYMENT BUTTON -->
                         <div class="price" id="price"></div>
-                        <center> <button type="submit" class="btn btn-success" id="final_pay" disabled>پرداخت</button>
-                        </center>
                         <script src="math.js"></script>
 
                     </form>
