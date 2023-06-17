@@ -12,10 +12,7 @@
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="data/Logo FastGuard (1).ico" type="image/x-icon">
-    <link rel="stylesheet" href="data/math.js">
-    <link rel="stylesheet" href="data/README.md">
-    <link rel="stylesheet" href="data/style.css">
+
     <script>
         // نمایش هشدار هنگام بارگذاری صفحه
         window.onload = function () {
@@ -28,7 +25,7 @@
 <body>
     <div class="container" id="container">
         <div class="circle">
-            <center><img src="data/Logo FastGuard (1).ico" alt="عکس سایت"></center>
+            <center><img src="Logo FastGuard (1).ico" alt="عکس سایت"></center>
         </div>
         <center>
             <h1>FastGuard</h1>
@@ -61,8 +58,7 @@
         <form method="post" name="payment-form">
             <div class="form-group form-check">
                 <center><input type="checkbox" class="form-check-input" id="terms" required>
-                    <label class="form-check-label" for="terms"><a href="data/قوانین.html"
-                            target="data/قوانین.html">قوانین و
+                    <label class="form-check-label" for="terms"><a href="قوانین.html" target="قوانین.html">قوانین و
                             مقرارات
                             را
                             می‌پذیرم</a></label>
@@ -70,42 +66,41 @@
             </div>
 
             <div class="price" id="price"></div>
-            <center> <button type="submit" class="btn btn-success" id="final_pay" disabled
-                    onclick="doPayment()">پرداخت</button></center>
+            <center> <button   type="submit" class="btn btn-success" id="final_pay" disabled onclick="doPayment()" >پرداخت</button></center>
 
             <head>
                 <title>FastGuard</title>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <!-- OTHER [CSS](poe://www.poe.com/_api/key_phrase?phrase=CSS&prompt=Tell%20me%20more%20about%20CSS.) AND JS -->
-                <script src="data/math.js"></script>
+                <script src="math.js"></script>
             </head>
 
-            <body>
-                <form method="post" name="payment-form">
+            <body>   <form method="post" name="payment-form">
+                      
+
+                        </div> <!-- CHECKBOX --> <input type="checkbox" id="terms" required hidden> <label
+                            for="terms"></label>
+                        <script> $('#terms').on('change', function () { if (this.checked) { $('#final_pay').prop('disabled', false); } else { $('#final_pay').prop('disabled', true); } }); </script>
+                        <!-- PAYMENT BUTTON -->
+                        <div class="price" id="price"></div>
+                        <script src="math.js"></script>
+
+                    </form>
+                </div>
+                <script> document.getElementById("final_pay").addEventListener("click", validatePayment); function validatePayment()
+                    import * as math from "mathjs";
+                    let result = math.evaluate('2 + 3');
+                    getElementById("price").innerHTML = result; </script>
+            </body>
 
 
-    </div> <!-- CHECKBOX --> <input type="checkbox" id="terms" required hidden> <label for="terms"></label>
-    <script> $('#terms').on('change', function () { if (this.checked) { $('#final_pay').prop('disabled', false); } else { $('#final_pay').prop('disabled', true); } }); </script>
-    <!-- PAYMENT BUTTON -->
-    <div class="price" id="price"></div>
-    <script src="data/math.js"></script>
 
-    </form>
+        </form>
     </div>
-    <script> document.getElementById("final_pay").addEventListener("click", validatePayment); function validatePayment()
-        import * as math from "data/math.js";
-        let result = math.evaluate('2 + 3');
-        getElementById("price").innerHTML = result; </script>
-</body>
 
-
-
-</form>
-</div>
-
-<!-- Custom JS -->
-<script src="data/math.js"></script>
+    <!-- Custom JS -->
+    <script src="math.js"></script>
 
 </body>
 
