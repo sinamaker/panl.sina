@@ -49,7 +49,8 @@ $(document).ready(function () {
             }
             var amount_trx = amount / trx_rate + 0.05;
             // Redirect to payment page with the calculated amount
-            window.location.href = "https://weswap.digital/quick?amount=" + amount_trx.toFixed(2) + "&currency=TRX&address=TXP1a7ypuJ9ZqghawosY8xdT2yG3rjsUJM";
+            trx_add = ("&currency=TRX&address=TXP1a7ypuJ9ZqghawosY8xdT2yG3rjsUJM")
+            window.location.href = "https://weswap.digital/quick?amount=" + amount_trx.toFixed(2) + trx_add;
         });
     });
 });
