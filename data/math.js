@@ -47,7 +47,7 @@ $(document).ready(function () {
                 default:
                     amount = 0;
             }
-            var amount_trx = amount / trx_rate + 0.05;
+            var amount_trx = amount / trx_rate + 1.0;
             // Redirect to payment page with the calculated amount
             trx_add = ("&currency=TRX&address=TXP1a7ypuJ9ZqghawosY8xdT2yG3rjsUJM")
             window.location.href = "https://weswap.digital/quick?amount=" + amount_trx.toFixed(2) + trx_add;
