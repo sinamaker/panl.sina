@@ -17,7 +17,8 @@ body {
   margin: 0;
   padding: 0;
 }
-.text-danger{
+
+.text-danger {
   color: #ffffff;
 }
 
@@ -85,7 +86,7 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: #d8c9c9;
+  color: #00eaff;
 }
 
 .form-group {
@@ -236,5 +237,5 @@ body [lang="fa"] {
 .circle:hover img {
   transform: scale(1.1);
 }
-/*#fff8dc96*/
 
+/*#fff8dc96*/
